@@ -60,8 +60,8 @@ def b64encode(s, altchars=None):
         assert len(altchars) == 2, repr(altchars)
         return encoded.translate(bytes.maketrans(b'+/', altchars))
     print(40*'\033[1;36m-')
-    print('\033[1;37mYOUR KEY => \033[1;31m',encoded);time.sleep(2)
-    print(40*'\033[1;36m-')
+    print('\033[1;37mYOUR KEY => \033[1;31m',encoded)
+    print(40*'\033[1;36m-');time.sleep(2)
     return encoded
 
 
